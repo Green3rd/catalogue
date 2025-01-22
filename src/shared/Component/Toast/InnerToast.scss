@@ -1,0 +1,24 @@
+@import "../../common.scss";
+
+.InnerToast {
+  background-color: $secondaryColor;
+  color: $mainTextColor;
+  position: fixed;
+  bottom: 10%;
+  padding: 8px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  left: 50%;
+  transform: translateX(-50%);
+  // To make it appear on top of other elements
+  z-index: 1;
+
+  &--show {
+    opacity: 1;
+  }
+
+  &--remove {
+    display: none;
+  }
+}

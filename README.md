@@ -1,0 +1,24 @@
+## Build Image
+
+<!-- For Mac Local -->
+
+docker build -t dummy-catalogue .
+docker run --rm -p 8000:2000 dummy-catalogue
+
+## Installation
+
+```bash
+$ yarn install
+```
+
+## Run
+
+```bash
+$ yarn start
+```
+
+localhost:2000
+
+## Env Var
+
+.env

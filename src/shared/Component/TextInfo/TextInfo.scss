@@ -1,0 +1,11 @@
+@import "../../common.scss";
+
+.TextInfo {
+  color: $darkTextColor;
+  padding: 8px 0;
+  white-space: pre-line;
+
+  &__Title {
+    color: $secondaryColor;
+  }
+}

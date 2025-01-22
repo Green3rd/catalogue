@@ -1,0 +1,92 @@
+@import "../../common.scss";
+
+$borderRadius: 12px;
+$cardPadding: 8px;
+
+.ItemCard {
+  display: flex;
+  flex-direction: column;
+  color: $darkTextColor;
+  background-color: #f8f8f8;
+  border-radius: $borderRadius;
+  box-shadow: 0 0.0625rem 0.125rem 0 rgba(0,0,0,.1);
+  // 2 Cards per row on mobile and tablet
+  margin: 8px 1%;
+  width: 46%;
+
+  @include for-tablet-landscape-up {
+    // 3 Cards per row on desktop
+    margin: 8px 1%;
+    width: 30%;
+  }
+
+  &--fourColumns {
+    @include for-desktop-up {
+      // 4 cards
+      margin: 8px 1%;
+      width: 23%;
+    }
+  }
+
+  &__Image {
+    border-top-left-radius: $borderRadius;
+    border-top-right-radius: $borderRadius;
+    align-self: center;
+    max-width: 100%;
+    
+    &--grey {
+      filter: grayscale(85%);
+    }
+  }
+
+  &__ContentContainer {
+    padding: $cardPadding;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  &__Name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  &__Info {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    position: relative;
+    flex-wrap: wrap;
+
+    &--quantity {
+      @include for-phone-only {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__InfoContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__InfoIcon {
+    color: $lightText;
+  }
+
+  &__ItemAvailable {
+    color: $lightText;
+    text-align: right;
+    font-size: 0.7em;
+  }
+
+  &__ItemSoldOut {
+    color: $secondaryColor;
+    text-align: right;
+    font-size: 1em;
+  }
+}

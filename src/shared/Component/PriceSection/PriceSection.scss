@@ -1,0 +1,11 @@
+@import "../../common.scss";
+
+.PriceSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $lightBackground;
+  border-radius: 4px;
+  padding: 18px 10px;
+
+}

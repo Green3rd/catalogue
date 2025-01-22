@@ -1,0 +1,18 @@
+@import "../../common.scss";
+
+.FormDropdown {
+  &__Input {
+    font-size: 1.05em;
+    margin: 0 12px;
+    padding: 8px;
+    border-radius: 4px;
+    color: $darkTextColor;
+    border-color: $quantityButton;
+  }
+
+  &__Dropdown {
+  }
+  &__Error {
+    color: $errorMessage;
+  }
+}

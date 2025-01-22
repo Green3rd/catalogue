@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PriceComponent /> should render and function correctly 1`] = `
+<span
+  className="PriceComponent"
+>
+  <span
+    className="PriceComponent__Price"
+  >
+    55.5$
+  </span>
+  <span
+    className="PriceComponent__Currency"
+  >
+    $
+  </span>
+</span>
+`;

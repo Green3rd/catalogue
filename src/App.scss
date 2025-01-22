@@ -1,0 +1,14 @@
+@import "./shared/common.scss";
+
+.App {
+  font-size: $baseFontSize;
+  color: $mainTextColor;
+
+  @include for-phone-only {
+    font-size: $mobileFontSize;
+  }
+}
+
+body {
+  background-color: $bgColor;
+}

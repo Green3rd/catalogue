@@ -1,0 +1,38 @@
+@import "../../common.scss";
+
+.IconLink {
+  display: flex;
+  text-decoration: none;
+  border-radius: 4px;
+  align-items: center;
+  padding: 5px;
+
+    // &:link,
+    // &:visited,
+    // &:hover,
+    // &:active
+    // { text-decoration: none; }
+
+    &--dark {
+      &:hover {
+        background-color: $quantityButton !important;
+      }
+
+      .IconLink__Text {
+        color: $darkTextColor;
+      }
+    }
+
+  &:hover {
+    background-color: $secondaryColorAlpha;
+  }
+
+  &__Icon {
+    width: 32px;
+  }
+
+  &__Text {
+    padding-left: 5px;
+    color: $mainTextColor;
+  }
+}

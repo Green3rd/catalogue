@@ -1,0 +1,96 @@
+@import "../../common.scss";
+
+.FormInput {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  align-items: flex-start;
+  width: 100%;
+
+  @mixin inputStyle($important) {
+    font-size: inherit $important;
+    padding: 6px 12px $important;
+    margin: 6px 0;
+    width: 94% $important;
+    border-radius: 4px $important;
+    border: 1px solid #646464 $important;
+    transition: border 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    height: auto $important;
+
+    &:focus {
+      border-color: rgb(201, 201, 201) $important;
+      outline: none;
+      box-shadow: $boxShadow;
+    }
+
+    &--error {
+      border-color: $mainColor;
+    }
+
+    @include for-tablet-landscape-up {
+      width: 96% $important;
+    }
+
+    @include for-phone-only {
+      width: 91% $important;
+    }
+  }
+
+  &__Label {
+  }
+
+  &__Field {
+    @include inputStyle(null);
+
+    &--noArrow {
+      -moz-appearance: textfield;
+      &::-webkit-inner-spin-button {
+        display: none;
+      }
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+
+  &__Error {
+    color: $mainColor;
+    font-size: 0.7em;
+  }
+
+  // For InputAddress
+  &--children {
+    // Container
+    label + div {
+      width: 100%;
+      div:only-child {
+        width: 100%;
+      }
+    }
+
+    // suggestion box container
+    input + div {
+      min-width: 300px !important;
+
+      // Item
+      div {
+        border-radius: 4px;
+        padding: 4px 16px !important;
+        color: $hoverBackground;
+        font-size: 0.8em;
+      }
+    }
+
+    input {
+      @include inputStyle(!important);
+    }
+
+    &.FormInput--error {
+      input {
+        border-color: $mainColor !important;
+      }
+    }
+  }
+}

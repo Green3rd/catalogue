@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PageHeader /> should render and function correctly 1`] = `
+<div
+  className="PageHeader"
+>
+  <button
+    className="PageHeader__BackButton"
+    onClick={[MockFunction]}
+  >
+    <img
+      alt="back button"
+      className="PageHeader__BackButtonImage"
+      src="leftArrow.svg"
+    />
+  </button>
+  <span
+    className="PageHeader__Text"
+  >
+    text
+  </span>
+</div>
+`;

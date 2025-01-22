@@ -1,0 +1,73 @@
+@import "../../common.scss";
+
+.PriceComponent {
+  color: $priceColor;
+  font-size: 1.2em;
+
+  &--bold {
+    .PriceComponent__Price {
+      font-weight: bold;
+    }
+
+    font-size: 1.3em;
+  }
+
+  &--grey {
+    float: right;
+    color: $greyTextColor;
+    font-size: 1em;
+  }
+
+  &__PriceContainer--block {
+    display: block;
+  }
+
+  &__Currency {
+    font-size: 0.7em;
+    color: $greyTextColor;
+  }
+
+  &__CrossOutContainer {
+    position: relative;
+    margin-right: 8px;
+  }
+
+  &__CrossOut {
+    color: $greyTextColor;
+    font-size: 0.65em;
+    padding: 0 5px;
+    position: relative;
+    bottom: 3px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 81%;
+      width: 110%;
+      border-top: 2px solid;
+      border-color: #e12d2d;
+      -webkit-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+
+      @supports (-webkit-touch-callout: none) {
+        // Ios only
+        right: -1px;
+        top: 51%;
+      }
+    }
+  }
+
+  &__Discount {
+    background-color: $priceColor;
+    border-radius: 4px;
+    color: $mainTextColor;
+    padding: 3px 8px;
+    font-size: 0.55em;
+    font-weight: bold;
+    margin-left: 12px;
+    bottom: 3px;
+    position: relative;
+    float: right;
+  }
+}

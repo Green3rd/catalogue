@@ -1,0 +1,52 @@
+@import "../../common.scss";
+
+$paddingX: 16px;
+
+.PageHeader h1 {
+  background-color: $mainColor;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  color: $mainTextColor;
+  box-shadow: 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, .2);
+  display: flex;
+  justify-content: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  // Z-index is needed because the join button has position relative
+  // the button use position relative to render :before to change the color
+  // can change :before to change the color in the buttin itself, to remove the position relatve and this z-index.
+  z-index: 1;
+}
+
+.PageHeader {
+
+  &__Text {
+    padding: 16px 0;
+    font-weight: 500;
+  }
+
+  &__BackButton {
+    padding: 15px $paddingX;
+    border: none;
+    background-color: $mainColor;
+    position: absolute;
+    left: 0;
+
+    &:hover {
+      background-color: $mainColorHover;
+    }
+
+    &:focus {
+      background-color: $mainColorFocus;
+    }
+  }
+
+  &__BackButtonImage {
+    height: 30px;
+
+    @include for-phone-only {
+      height: 22px;
+    }
+  }
+}

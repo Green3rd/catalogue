@@ -1,0 +1,62 @@
+// color
+$mainColor: #d60000;
+$mainColorHover: #f54848;
+$mainColorFocus: #aa0000;
+
+$secondaryColor: #70120d;
+$secondaryColorAlpha: #ff9892;
+$secondaryColorLight: #ffd0cd;
+$bgColor: rgb(230, 230, 230);
+
+$lightText: #757575;
+$lightBackground: #f1f1f1;
+
+$quantityButton: #cdcdcd;
+$quantityButtonDisable: #e9e9e9;
+
+$hoverBackground: rgb(39, 39, 39);
+$hoverText: #e9e9e9;
+
+$mainTextColor: #e6e6e6;
+$greyTextColor: #737373;
+$darkTextColor: rgb(22, 22, 22);
+$darkTextColor2: rgb(71, 0, 0);
+
+$priceColor: rgb(253, 73, 63);
+
+$errorMessage: rgb(230, 38, 28);
+
+// Size
+$mobileFontSize: 15px;
+$headerPadding: 70px;
+$baseFontSize: 20px;
+
+// stlying
+$boxShadow: 1px 1px 5px #3d3d3d;
+
+// breakpoint
+@mixin for-phone-only {
+  @media (max-width: 444px) {
+    @content;
+  }
+}
+// @mixin for-tablet-portrait-up {
+//   @media (min-width: 600px) {
+//     @content;
+//   }
+// }
+@mixin for-tablet-landscape-up {
+  @media (min-width: 980px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1370px) {
+    @content;
+  }
+}
+// @mixin for-big-desktop-up {
+//   @media (min-width: 1800px) {
+//     @content;
+//   }
+// }

@@ -1,0 +1,12 @@
+@import "../../shared/common.scss";
+
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+
+  &__Text {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+  }
+}

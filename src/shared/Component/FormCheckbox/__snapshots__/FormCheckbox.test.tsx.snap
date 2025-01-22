@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormCheckbox /> should render and function correctly 1`] = `
+<label
+  className="FormCheckbox"
+>
+  <Field
+    className="FormCheckbox__Input"
+    name="errorText"
+    type="checkbox"
+  />
+  <span
+    className="FormCheckbox__Checkmark"
+  />
+  text
+  <FormikConnect(ErrorMessageImpl)
+    className="FormCheckbox__Error"
+    component="div"
+    name="errorText"
+  />
+</label>
+`;

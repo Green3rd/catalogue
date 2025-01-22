@@ -1,0 +1,80 @@
+@import "../../../common.scss";
+
+.LoadingAnimation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 27px;
+
+
+  &--admin {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .LoadingAnimation__Dot{
+      background: $secondaryColor;
+    }
+  }
+
+  @include for-phone-only {
+    min-height: 20px;
+  }
+
+  &__Container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  &__Dot{
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    margin: 0 10px;
+    animation: load 0.7s ease infinite;
+
+    @include for-phone-only {
+      width: 10px;
+      height: 10px;
+      animation: loadPhone 0.7s ease infinite;
+    }
+  
+    &--one {
+      animation-delay: 0.3s;
+    }
+
+    &--two {
+      animation-delay: 0.4s;
+    }
+
+    &--three {
+      animation-delay: 0.5s;
+    }
+
+
+  }
+
+  @keyframes load{
+    0%{
+        width: 15px;
+        height: 15px;
+    }
+    50%{
+        width: 10px;
+        height: 10px;
+    }
+  }
+
+  @keyframes loadPhone{
+    0%{
+        width: 10px;
+        height: 10px;
+    }
+    50%{
+        width: 5px;
+        height: 5px;
+    }
+  }
+}

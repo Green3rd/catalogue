@@ -1,0 +1,15 @@
+@import "../../common.scss";
+
+.CollapseBox {
+  &__Header {
+    border-radius: 4px;
+    padding: 8px 4px 0 8px;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.15s ease-in-out 0s;
+
+    &:hover {
+      background-color: $quantityButton;
+    }
+  }
+}

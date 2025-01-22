@@ -1,0 +1,14 @@
+@import "../../shared/common.scss";
+
+.InfoBox {
+  top: 30px;
+  right: 0;
+  position: absolute;
+  background-color: $hoverBackground;
+  color: $hoverText;
+  font-size: 0.8em;
+  width: 80%;
+  padding: 16px;
+  border-radius: 8px;
+  z-index: 1;
+}

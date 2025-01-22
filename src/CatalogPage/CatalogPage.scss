@@ -1,0 +1,45 @@
+@import "../shared/common.scss";
+
+.CatalogPage {
+  background-color: $bgColor;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__ItemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    // For horizontal space on large screen
+    @include for-tablet-landscape-up {
+      padding: 0 11%;
+    }
+
+    &--last {
+      margin-bottom: 90px;
+    }
+  }
+
+  &__Message {
+    color: $darkTextColor;
+    padding-top: 1em;
+  }
+
+  &__TextContainer {
+    color: $darkTextColor;
+    font-weight: bold;
+    margin: 2em 1em 0 1em;
+    font-size: 1.1em;
+    @include for-tablet-landscape-up {
+      padding: 0 11%;
+    }
+  }
+
+  &__SubText {
+    font-weight: normal;
+    padding: 0.5em 0;
+    font-size: 0.8em;
+  }
+}

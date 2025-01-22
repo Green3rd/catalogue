@@ -1,0 +1,18 @@
+@import "../../common.scss";
+
+.BgCard {
+  background-color: #ffffffde;
+  border-radius: 8px;
+  padding: 16px 20px;
+  width: 80%;
+
+  @include for-desktop-up {
+    width: 60%;
+    padding: 16px 32px;
+  }
+
+  @include for-phone-only {
+    width: 97%;
+    padding: 16px 12px;
+  }
+}

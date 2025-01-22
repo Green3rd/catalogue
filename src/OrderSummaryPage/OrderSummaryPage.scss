@@ -1,0 +1,31 @@
+@import "../shared/common.scss";
+
+.OrderSummaryPage {
+  &__Item {
+    padding: 10px 0;
+  }
+
+  &__ItemSmall {
+    font-size: 0.8em;
+    padding-left: 4px;
+  }
+
+  // &__ItemHighlight {
+  //   font-weight: bold;
+  //   font-style: italic;
+  //   color: $darkTextColor2;
+  //   padding-right: 8px;
+  //   font-size: 1.1em;
+
+  //   &--big {
+  //     font-size: 1.2em;
+  //   }
+  // }
+
+  &__CardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../common.scss";
+
+.TotalAmount {
+  &--color {
+    .TotalAmount__Title {
+      color: $secondaryColor;
+    }
+  }
+
+  &__Title {
+    padding-right: 6px;
+  }
+}

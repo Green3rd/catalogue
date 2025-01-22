@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormInput /> should render and function correctly 1`] = `
+<div
+  className="FormInput"
+>
+  <label
+    className="FormInput__Label"
+    htmlFor="errorText"
+  >
+    text
+  </label>
+  <Field
+    className="FormInput__Field"
+    name="errorText"
+    placeholder="placeholder"
+    type="email"
+  />
+  <FormikConnect(ErrorMessageImpl)
+    className="FormInput__Error"
+    component="div"
+    name="errorText"
+  />
+</div>
+`;

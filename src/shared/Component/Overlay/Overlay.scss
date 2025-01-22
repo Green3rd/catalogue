@@ -1,0 +1,26 @@
+@import "../../common.scss";
+
+.Overlay {
+  background-color: rgba(0, 0, 0, 0.35);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &--darker {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  &__Text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4em;
+    background-color: $secondaryColor;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+}
