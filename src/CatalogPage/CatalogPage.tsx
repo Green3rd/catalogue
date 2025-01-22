@@ -12,9 +12,8 @@ import {
   setOrderToStorage,
 } from "shared/utils/localstorage";
 import { routeName } from "config/routeConfig";
-import { getClientCakeType, getDataSendingToAnotherPage } from "./mapper";
+import { getDataSendingToAnotherPage } from "./mapper";
 import { MooncakeAmount } from "OrderSummaryPage/type";
-import { ErrorMessage } from "shared/utils/message";
 import { isMockMode, isWebOpen } from "shared/utils/configurationsHelper";
 import { CakeType } from "constants/CakeType";
 import { MooncakeModel } from "shared/utils/callServer/type";
